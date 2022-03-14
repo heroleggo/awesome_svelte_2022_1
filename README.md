@@ -11,6 +11,8 @@
 
 npm workspace를 활용하여 한 repository 안에서 frontend, backend workspace를 분리함
 
+TBD. 차차 추가할게요
+
 ## References
 
 > Svelte : https://svelte.dev/ 
