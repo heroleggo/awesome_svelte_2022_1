@@ -14,6 +14,6 @@ npm workspace를 활용하여 한 repository 안에서 frontend, backend workspa
 ## References
 
 > Svelte : https://svelte.dev/
-Nestjs : https://nestjs.com/
-MongoDB : https://www.mongodb.com/
-TypeORM : https://typeorm.io/#/
+> Nestjs : https://nestjs.com/
+> MongoDB : https://www.mongodb.com/
+> TypeORM : https://typeorm.io/#/
