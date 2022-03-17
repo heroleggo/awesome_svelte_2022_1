@@ -13,7 +13,9 @@
 
 ## 구성
 
-npm workspace를 활용하여 한 repository 안에서 frontend, backend workspace를 분리함
+~npm workspace를 활용하여 한 repository 안에서 frontend, backend workspace를 분리함~
+
+손이 많이 가는 관계로, repository를 분리하여 작업 예정
 
 TBD. 차차 추가할게요
 
