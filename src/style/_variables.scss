@@ -9,10 +9,8 @@ $gray-700: #333333;
 $gray-800: #111111;
 $gray-900: #000000;
 
-// WIP
-@font-face {
-  font-family: 'WooridaumB';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/WooridaumB.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
+:global {
+  * {
+    font-family: 'SUIT', sans-serif;
+  }
 }
