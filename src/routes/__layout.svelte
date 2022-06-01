@@ -2,35 +2,51 @@
 </script>
 <style lang="scss">
     .header {
-      padding: 10px 0;
+      width: 85%;
+      margin: auto;
+      padding: 12px 12px;
       display: flex;
       justify-content: space-between;
+      .name {
+        font-size: 20px;
+        font-weight: 700;
+      }
+      .menu {
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        a {
+          margin: 0 12px;
+        }
+      }
     }
-    .name {
-      padding-left: 10px;
-      font-size: 16px;
-      font-weight: 700;
+    .footer {
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
     }
 </style>
 
 <div class="header">
     <div class="name">
-        Frontend, Backend Developer Youngwoong You
+        Junior Web Developer, Youngwoong You
     </div>
-    <nav>
-        <div class="">
-            <a href="/">home</a>
-            <a href="/about">about</a>
-            <a href="/projects">projects</a>
-        </div>
-    </nav>
+    <div class="menu">
+        <a href="/">home</a>
+        <a href="/about">about</a>
+        <a href="/projects">projects</a>
+    </div>
 </div>
 
 <slot></slot>
 
-<footer>
-    <a href="/">home</a>
-    <a href="/about">about</a>
-    <a href="/projects">projects</a>
+<footer class="footer">
+    <div>
+        <h2>Contact</h2>
+        <h4>h3r0.y0u@gmail.com</h4>
+    </div>
 </footer>
 

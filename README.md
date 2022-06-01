@@ -9,21 +9,12 @@
 
 ## 사용 기술
 
-- Frontend : Svelte
-- Backend : Nestjs + MongoDB(Mongoose)
-
-## 구성
-
-~~npm workspace를 활용하여 한 repository 안에서 frontend, backend workspace를 분리함~~
-
-손이 많이 가는 관계로, repository를 분리하여 작업 예정
+- Frontend : Svelte + Sveltekit + SCSS
+- ~~Backend : Nestjs + MongoDB(Mongoose)~~
+  - static value를 사용하여 backend를 사용하지 않게 되었음
 
 ## References
 
-> Svelte : https://svelte.dev/ 
+> Svelte : [Svelte official page](https://svelte.dev/)
 >
-> Nestjs : https://nestjs.com/ 
->
-> MongoDB : https://www.mongodb.com/ 
->
-> TypeORM : https://typeorm.io/#/ 
+> Sveltekit: [Sveltekit official page](https://kit.svelte.dev/)
