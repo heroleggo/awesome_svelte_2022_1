@@ -12,10 +12,10 @@
         font-weight: 700;
       }
       .menu {
-        width: 20%;
+        width: 30%;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: flex-end;
         a {
           margin: 0 12px;
         }
