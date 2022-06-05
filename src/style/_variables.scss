@@ -16,6 +16,10 @@ $gray-900: #000000;
   a {
     text-decoration: none;
   }
+  a:visited {
+    text-decoration: none;
+    color: #000000;
+  }
   body {
     margin: 0;
     height: 100%;

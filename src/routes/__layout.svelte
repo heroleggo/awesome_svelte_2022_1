@@ -1,4 +1,15 @@
 <script>
+    import { page } from '$app/stores';
+
+	let currentPath;
+
+    $: if ($page.url.pathname === '/') {
+		currentPath = 'home';
+    } else if ($page.url.pathname === '/about') {
+		currentPath = 'about';
+    } else if ($page.url.pathname === '/projects') {
+		currentPath = 'projects';
+    }
 </script>
 <style lang="scss">
     .header {
@@ -28,6 +39,21 @@
       justify-content: center;
       text-align: center;
     }
+    .container {
+      padding: 10px 0;
+      background: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+      width: 100%;
+      height: 240px;
+      font-size: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      & > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
 </style>
 
 <div class="header">
@@ -39,6 +65,22 @@
         <a href="/about">about</a>
         <a href="/projects">projects</a>
     </div>
+</div>
+<div class="container">
+    {#if currentPath === 'home'}
+        <div>
+            <p>안녕하세요?</p>
+            <p>주니어 웹 개발자 유영웅입니다.</p>
+        </div>
+    {:else if currentPath === 'about'}
+        <div>
+            About Me
+        </div>
+    {:else if currentPath === 'projects'}
+        <div>
+            Projects
+        </div>
+    {/if}
 </div>
 
 <slot></slot>
