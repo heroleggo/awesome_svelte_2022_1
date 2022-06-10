@@ -1,55 +1,39 @@
 <script>
+    import ProjectCard from '$components/ProjectCard.svelte';
+
+    const projects = [
+        {
+            name: '지구정복 프로젝트',
+            description: '지구정복 프로젝트입니다.',
+            image: '/images/earth_boom.jpg',
+            direction: 'left',
+        },
+        {
+            name: '우주정복 프로젝트',
+            description: '우주정복 프로젝트입니다.',
+            image: '/images/space_boom.jpg',
+            direction: 'right',
+        },
+    ];
 </script>
 
-<div class="projects">
+<section>
     <h3>진행했던 프로젝트</h3>
-    <div class="container">
-        <div class="box">대충 지구 사진이라고 생각하십쇼</div>
-        <p>
-            프로젝트명: 지구정복 프로젝트
-            <br />
-            대충 어쩌구 저쩌구 저쩌구 저쩌구
-        </p>
-    </div>
-    <div class="container">
-        <p>
-            프로젝트명: 우주정복 프로젝트
-            <br />
-            대충 어쩌구 저쩌구 저쩌구 저쩌구
-        </p>
-        <div class="box">대충 외계인 침공 사진</div>
-    </div>
-</div>
+    {#each projects as project}
+        <ProjectCard
+            name={project.name}
+            description={project.description}
+            image={project.image}
+            direction={project.direction}
+        />
+    {/each}
+</section>
 
 <style lang="scss">
-    .projects {
+    section {
         width: 80%;
         margin: auto;
         display: flex;
         flex-direction: column;
-    }
-    .box {
-        width: 400px;
-        height: 300px;
-        border: 2px solid black;
-        border-radius: 5px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .container {
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        &:not(:last-of-type) {
-            margin-bottom: 24px;
-        }
-
-        div + p {
-            margin-left: 24px;
-        }
-        p + div {
-            margin-left: 24px;
-        }
     }
 </style>

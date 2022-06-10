@@ -1,11 +1,11 @@
-<div class="about">
+<section>
     <p>저는 대충 어쩌구저쩌구인 사람입니다.</p>
     <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, aliquid amet doloribus eligendi facilis soluta
         tenetur. Consectetur dignissimos dolores eaque earum eos excepturi hic iure magnam, nemo nihil porro,
         repellendus?
     </p>
-    <div class="icon-holder">
+    <article>
         <h3>Links</h3>
         <div>
             <a href="https://github.com/heroleggo" target="_blank">
@@ -15,15 +15,15 @@
             </a>
             <a href="https://heroleggo.world" target="_blank"> Go to Tistory Blog (almost empty :D) </a>
         </div>
-    </div>
-</div>
+    </article>
+</section>
 
 <style lang="scss">
-    .about {
+    section {
         width: 80%;
         margin: auto;
     }
-    .icon-holder {
+    article {
         display: flex;
         flex-direction: column;
         align-items: center;

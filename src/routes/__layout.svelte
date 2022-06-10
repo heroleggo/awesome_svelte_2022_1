@@ -12,15 +12,15 @@
     }
 </script>
 
-<div class="header">
-    <div class="name">Junior Web Developer, Youngwoong You</div>
+<nav class="header">
+    <a class="name" href="/"> Junior Web Developer, Youngwoong You </a>
     <div class="menu">
         <a href="/">home</a>
         <a href="/about">about</a>
         <a href="/projects">projects</a>
     </div>
-</div>
-<div class="container">
+</nav>
+<header class="container">
     {#if currentPath === 'home'}
         <div>
             <p>안녕하세요?</p>
@@ -31,19 +31,17 @@
     {:else if currentPath === 'projects'}
         <div>Projects</div>
     {/if}
-</div>
+</header>
 
 <slot />
 
-<footer class="footer">
-    <div>
-        <h2>Contact</h2>
-        <h4>h3r0.y0u@gmail.com</h4>
-    </div>
+<footer>
+    <h2>Contact</h2>
+    <h4>h3r0.y0u@gmail.com</h4>
 </footer>
 
 <style lang="scss">
-    .header {
+    nav {
         width: 85%;
         margin: auto;
         padding: 12px 12px;
@@ -63,14 +61,15 @@
             }
         }
     }
-    .footer {
+    footer {
         padding: 0 20px;
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
+        flex-direction: column;
     }
-    .container {
+    header {
         padding: 10px 0;
         background: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
         width: 100%;
